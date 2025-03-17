@@ -10,4 +10,3 @@ res.json({mensagem:'Rota Funcionando'});
 app.listen(5000, () =>{
     console.log('meu servidor está funcionando');
 })
-// teste 200
