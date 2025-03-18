@@ -1,5 +1,4 @@
 import express, { request, response } from "express";
-import { db, URI } from "../../api/connectMdb.js";
 import { Filme } from "../models/filme.js";
 
 const routes = express.Router();
