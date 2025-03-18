@@ -6,10 +6,9 @@ import express from "express";
 import morgan from "morgan";
 import bodyParser from "body-parser";
 import routes from "./src/routes/filmes.routes.js";
-import { db, URI } from "./api/connectMdb.js";
 import mongoose from "mongoose";
 
-mongoose.connect(`${URI}`);
+mongoose.connect(`mongodb+srv://admin:p6AeFo7EfSkYGJeO@cluster0.jssai.mongodb.net/projetoNetflix`);
 
 const app = express();
 

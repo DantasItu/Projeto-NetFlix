@@ -5,7 +5,7 @@ export const URI =
 
 const client = new MongoClient(URI);
 
-export const db = client.db("ProjetoNetflix");
+export const db = client.db("projetoNetflix");
 
 // const filmesCollection = await db.collection("filmes").find({}).toArray();
 

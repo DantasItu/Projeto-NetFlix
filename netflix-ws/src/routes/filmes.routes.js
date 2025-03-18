@@ -1,4 +1,4 @@
-import express, { request } from "express";
+import express, { request, response } from "express";
 import { db, URI } from "../../api/connectMdb.js";
 import { Filme } from "../models/filme.js";
 
@@ -21,7 +21,7 @@ routes.post("/", async (req, res) => {
   try {
     const filme = req.body;
     const response = await new Filme(filme).save();
-    res.json({ error: false, filme: response });
+   res.json({ error: false, filme: response });
   } catch (err) {
     res.json({ error: true, message: err.message });
   }
