@@ -1,5 +1,6 @@
-import express from 'express'
-import {db} from '../../api/connectMdb.js'
+import express, { request } from 'express';
+import {db, URI} from '../../api/connectMdb.js';
+import { Filme } from '../models/filme.js';
 
 const routes = express.Router();
 
@@ -17,8 +18,9 @@ routes.get('/', (req,res)=>{
     });
     
     // CRIAR UM REGISTRO
-    routes.post('/',(req,res)=>{
+    routes.post('/',async (req,res)=>{
         const body = req.body;
+        await
         res.json(body);
     });
     

@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const URI =
+export const URI =
   "mongodb+srv://admin:p6AeFo7EfSkYGJeO@cluster0.jssai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const client = new MongoClient(URI);
